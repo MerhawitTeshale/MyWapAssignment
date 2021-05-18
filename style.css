@@ -1,5 +1,6 @@
 body{
     margin: 10px;
+    font-family: sans-serif;
 }
 
 .container{
@@ -11,6 +12,7 @@ body{
     display:flex;
     justify-content: space-between;
     padding: 38px;
+    background:darksalmon;
 }
 
 .left-side{
@@ -39,4 +41,10 @@ body{
 }
 .nav-link-wrapper a :hover{
     color: black;  
+}
+.footer{
+    background: darkgray;
+    
+    height: 150px;
+
 }
