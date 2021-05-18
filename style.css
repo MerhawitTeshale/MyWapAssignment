@@ -3,9 +3,27 @@ body{
     font-family: sans-serif;
     background-color:rgba(70, 73, 38, 0.849);
 }
+p, li,ol{
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+ol{
+    list-style-type: decimal;
+}
+hr{
+    size: 10px;
+    width: 100%;
+    color: wheat;
+}
 .image-container{
-    width: 200px;
+    width: 250px;
     border-radius: 150px;
+    float: left;
+    align-content: space-between;
+    margin-right: 10px;
+    padding: 40px;
 }
 
 .container{
@@ -49,37 +67,28 @@ body{
 }
 .footer{
     background: darksalmon;
-    height: 130px;
+    height: 150px;
 }
 .heading-about{
     color: rgb(131, 151, 218);
 }
-.img-size{
-    width: 300px;
+.img-wrapper-big{
+    height: 400px;
 }
 .img-wrapper{
     display: flex;
     justify-content: space-between;
-    height: 200px;
     margin-right: 500px;
     padding: 38px;
 }
 .left-img{
     display: flex;
     width: 250px;
+    height: 250px;
 }
-.img-wrapper>.left-img> div{
-}
-    
-.left-side{
-
-}
-#p-italic-id{
+.p-italic-id{
     font-style: italic;
 }
 strong{
     color: yellow;
-}
-ol{
-    list-style-type: decimal;
 }
