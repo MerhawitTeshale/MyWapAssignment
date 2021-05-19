@@ -78,14 +78,23 @@ hr{
 .img-wrapper{
     display: flex;
     justify-content: space-between;
-    margin-right: 500px;
+    margin-right: 400px;
     padding: 38px;
 }
+
 .left-img{
-    display: flex;
-    width: 250px;
+    
+    width: 200px;
+    height: 250px;
+    float: left;
+   
+}
+.right-img{
+    
+    width: 350px;
     height: 250px;
 }
+
 .p-italic-id{
     font-style: italic;
 }
