@@ -15,6 +15,9 @@ ol{
 li{
     list-style-image: url(image/images/pie_icon.gif);
 }
+li>.number-list{
+    list-style-type: decimal;
+}
 span{
     font-weight: bold;
 }
@@ -38,6 +41,7 @@ blockquote{
 .footer-div{
     text-align: right;
 }
+
 #main-heading{
     text-align: center;
     size: 22pt;
