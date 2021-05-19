@@ -79,6 +79,7 @@ hr{
     justify-content: space-between;
     float: left;
     padding: 38px;
+    vertical-align: bottom;
 }
 
 .left-img{
