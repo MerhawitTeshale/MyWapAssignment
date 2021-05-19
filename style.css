@@ -94,7 +94,9 @@ hr{
     width: 350px;
     height: 250px;
 }
-
+.link-identifer{
+    color: red;
+}
 .p-italic-id{
     font-style: italic;
 }
