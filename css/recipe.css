@@ -1,5 +1,5 @@
 body{
-    background-image: url("image/images/silverware.jpg");
+    background-image: url("../image/images/silverware.jpg");
     color: #404040;
     font-size: 11pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -15,7 +15,7 @@ ol{
 li{
     list-style-image: url(image/images/pie_icon.gif);
 }
-li>.number-list{
+.number-list{
     list-style-type: decimal;
 }
 span{
@@ -48,8 +48,4 @@ blockquote{
     font-weight: bold;
     margin-left: 150px;
     margin-right: 150px;
-}
-#cake-id{
-    text-decoration-line: underline;
-    text-underline-position: ;
 }

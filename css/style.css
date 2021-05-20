@@ -12,6 +12,22 @@ p,li,ol{
 ol{
     list-style-type: decimal;
 }
+select{
+ width: 150px;
+ font-family: sans-serif;
+}
+form input{
+    padding: 10px;
+    font-family: sans-serif;
+}
+label{
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+h1,h3{
+    font-family: sans-serif;
+    color: whitesmoke;
+}
 hr{
     width: 100%;
     color: wheat;
