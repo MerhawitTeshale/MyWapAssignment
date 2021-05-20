@@ -3,8 +3,6 @@ body{
    font-size: 8pt;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
 .head-content{
   width: auto;
 }
@@ -22,9 +20,11 @@ body{
     align-content: center;
     border: 4px solid gray;
     border-radius: 20px;
+    overflow: auto;
+    margin: auto;
 }
 .validation-icon{
-    text-align: left;
+    float: right;
 }
 .big-img{
     float: right;
@@ -33,10 +33,16 @@ body{
 .right-content{
     float: right;
     width: 246px;
-    border: 1px solid rgba(101, 131, 45, 0.568);
-    background-color: rgba(101, 131, 45, 0.568);
+    border: 1px solid rgb(101, 128, 52);
+    background-color: rgb(101, 128, 52);
     clear: right;
     border-radius: 2px 2px 16px 2px;
+}
+.right-content-paragraph{
+    display:block;
+    margin-left: 5em;
+    font-size: 8pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .banner-top{
     border-radius: 16px 2px 2px 2px;
@@ -52,7 +58,7 @@ body{
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 .grid-container-pcontent{
     border: 2px solid grey;
@@ -61,10 +67,15 @@ body{
     padding: 10px;
     margin: 10px;
 }
-.page-number-footer{
-    background-color: rgba(101, 131, 45, 0.568);
-    border: 1px solid rgba(101, 131, 45, 0.568);
-    height:25px;
+#header-top{
+    font-size: 40px;
+    color: red;
+    font-weight: bold;
+}
+#page-number-footer{
+    background-color: rgba(101, 128, 52, 0.787);
+    border: 1px solid rgba(101, 128, 52, 0.787);
+    height:30px;
     border-radius: 2px 2px 16px 16px;
     margin: auto;
     text-align: center;
