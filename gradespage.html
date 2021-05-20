@@ -33,20 +33,22 @@
                 </div>
             </div>
         <h1>Retrive your grade</h1>
-
-        <h3>Student information</h3>
-        <form action="http://mumstudents.org/params.php">
-            <label for="studentId">Student ID: </label> <br>
-            <input type="text" id="sid" name="sid" value="id here"><br>
-            <label for="fname">First Name: </label> <br>
-            <input type="text" id="fname" name="fname" value="your name here"><br>
-            <label for="lname">Last Name: </label> <br>
-            <input type="text" id="lname" name="lname" value="last name here"><br>
+            <fieldset>
+                <legend>Student information:</legend>
+       
+        <form action="http://mumstudents.org/params.php" method="" enctype="" novalidate autocomplete="">
+            <label for="studentId">Student ID: </label> <br> <br>
+            <input type="text" id="sid" name="sid" pattern="[0-9] {4}" required><br>
+            <label for="fname">First Name: </label> <br> <br>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]" title="use character only"><br>
+            <label for="lname">Last Name: </label> <br> <br>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]" title="use character only"><br>
         </form>
+            </fieldset>
+      
 
-        <hr>
-        <label for="assignment"> Assignment:</label> <br>
-        
+        <fieldset>
+        <legend>Assignments:</legend>
         <select name="assignments" id="Ass">
             <option value="W1D1"> W1D1: Home Page</option>
             <option value="W1D2"> W1D2: About page</option>
@@ -54,9 +56,10 @@
             <option value="W1D3"> W1D3: Movie Review</option>
             <option value="W1D3-2"> W1D3-2: Grade Book</option>
         </select>
+    </fieldset>
         
-        <hr>
-        <h3>please fill this out for security</h3>
+    <fieldset>
+        <legend>please fill this out for your security</legend>
         <form action="http://mumstudents.org/params.php">
             <input type="radio" id="feb2020" name="entry" value="feb-2020">
             <label for="feb2020">Feb-2020</label><br>
@@ -68,10 +71,12 @@
             <label for="may2021">May-2021</label><br>
             
         </form>
+  
         <form action="http://mumstudents.org/params.php">
             <input type="checkbox" id="validation" name="validation" value="i agree">
             <label for="validation">this is a statment that i provided above is correct and i will be held accountable if it is not</label>
         </form>
+    </fieldset>
         
         <form action="http://mumstudents.org/params.php">
             <input type="submit" value="Submit">
