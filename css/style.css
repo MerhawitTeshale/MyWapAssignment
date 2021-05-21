@@ -16,8 +16,7 @@ select{
  width: 150px;
  font-family: sans-serif;
 }
-form input{
-    padding: 10px;
+ input{
     font-family: sans-serif;
 }
 label{
