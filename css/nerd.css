@@ -1,0 +1,30 @@
+fieldset{
+    background-color: rgb(195, 164, 253);
+    border: 1px solid rgb(195, 164, 253);
+    border-radius: 16px;
+    width:fit-content;
+    padding: 16px;
+}
+legend{
+    border:1px solid black;
+    background-color: rgb(250, 246, 240);
+    box-shadow: grey;
+}
+label{
+    padding:9px;
+}
+input{
+    size: 6;
+}
+button{
+    background-color: darksalmon;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.validation-icon{
+    float: left;
+}
+#back-btn{
+    width: 20px;
+    height:20px;
+}
