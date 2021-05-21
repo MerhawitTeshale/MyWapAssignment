@@ -36,7 +36,7 @@ body{
     border: 1px solid rgb(101, 128, 52);
     background-color: rgb(101, 128, 52);
     clear: right;
-    border-radius: 2px 2px 16px 2px;
+    border-radius: 2px 2px 2px 2px;
 }
 .right-content-paragraph{
     display:block;
@@ -80,4 +80,7 @@ body{
     margin: auto;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    bottom: 0px;
+    clear: right;
 }

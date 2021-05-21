@@ -1,0 +1,8 @@
+
+/*this is call attribute selector*/
+[type="text"]:focus{
+ background-color: darksalmon;
+}
+
+/*regular expressions*/
+
