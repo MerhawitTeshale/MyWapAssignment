@@ -23,7 +23,9 @@ body{
     margin: auto;
 }
 .validation-icon{
-    float: right;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
 }
 .big-img{
     float: right;
