@@ -12,8 +12,8 @@ a{
 ol{
     list-style-type: decimal;
 }
-li{
-    list-style-image: url(image/images/pie_icon.gif);
+ul li{
+    list-style-image: url(../image/images/pie_icon.gif);
 }
 .number-list{
     list-style-type: decimal;
