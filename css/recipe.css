@@ -13,7 +13,7 @@ ol{
     list-style-type: decimal;
 }
 ul li{
-    list-style-image: url(../image/images/pie_icon.gif);
+    list-style-image: url("../image/images/pie_icon.gif");
 }
 .number-list{
     list-style-type: decimal;
