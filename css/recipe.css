@@ -33,7 +33,7 @@ blockquote{
     font-weight: normal;
     text-decoration: underline;
     text-underline-position: below;
-    margin-right: 600px;
+    display: initial;
 }
 .comment-div-color{
     background-color: rgba(248, 248, 109, 0.739);

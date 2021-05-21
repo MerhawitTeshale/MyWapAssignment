@@ -111,9 +111,12 @@ hr{
 .p-italic-id{
     font-style: italic;
 }
+
+
+
+
 .para-img-wrapper{
-    float: left;
-   display: inline-block;
+   display: contents;
 }
 strong{
     color: yellow;
