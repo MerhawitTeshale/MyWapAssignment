@@ -1,0 +1,21 @@
+body{
+    background-color: darkolivegreen;
+}
+#img-con{
+    width: 200px;
+    height: 200px;
+    border-radius: 120px;
+}
+#p-con{
+    font-size: 50px;
+    font-weight: bolder;
+    display: table-caption;
+    color: darksalmon;
+    display: contents;
+}
+button{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color: darksalmon;
+}

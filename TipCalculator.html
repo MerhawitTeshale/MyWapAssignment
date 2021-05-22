@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculate tip</title>
+    <script src="js/onClick.js"></script>
+    <link rel="stylesheet" href="css/tip.css">
+</head>
+<body>
+    <head>
+        <img id="img-con" src="image/logo/4328c30611e0c3a5556fa1d4cb35dae7.png" alt=" calculator image">
+        <text id="p-con">Tip Calculator</text>
+    </head>
+
+    <form action="">
+        <input type="number" name="subtotal" id="subtotal">
+        <label for="subtotal">$ Subtotal</label> <br><br>
+        <input type="number" name="tip" id="tip">
+        <label for="tip">% Tip</label> <br><br>
+        <button onclick="tipCalculator(document.getElementById('subtotal').Value,document.getElementById('tip').Value)"> Calculate Tip</button>
+
+        <hr>
+        <h1>Your Total:</h1>
+        
+        
+    </form>
+</body>
+</html>
