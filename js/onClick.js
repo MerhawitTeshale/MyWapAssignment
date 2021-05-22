@@ -7,3 +7,6 @@ function tipCalculator(a=10,b=90){
     let result =a+b;
     alert(result);
 }
+function gogogo() {
+    alert("Yay, it works!");
+}
