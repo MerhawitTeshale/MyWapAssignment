@@ -13,18 +13,15 @@
         <img id="img-con" src="image/logo/4328c30611e0c3a5556fa1d4cb35dae7.png" alt=" calculator image">
         <text id="p-con">Tip Calculator</text>
     </head>
-
-    <form action="">
+    <fieldset>
         <input type="number" name="subtotal" id="subtotal">
         <label for="subtotal">$ Subtotal</label> <br><br>
         <input type="number" name="tip" id="tip">
         <label for="tip">% Tip</label> <br><br>
-        <button onclick="tipCalculator(document.getElementById('subtotal').Value,document.getElementById('tip').Value)"> Calculate Tip</button>
-
-        <hr>
+        <button onclick="tipCalculator()"> Calculate Tip</button>        
+    <hr>
         <h1>Your Total:</h1>
-        
-        
-    </form>
+        <input type="text" id="result" name="result">
+    </fieldset>
 </body>
 </html>

@@ -1,6 +1,11 @@
 body{
     background-color: darkolivegreen;
 }
+fieldset{
+    border: 1px solid darksalmon;
+    width: fit-content;
+    margin:100px;
+}
 #img-con{
     width: 200px;
     height: 200px;
