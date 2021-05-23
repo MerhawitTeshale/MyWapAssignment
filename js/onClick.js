@@ -18,3 +18,17 @@ function tipCalculator(){
 function gogogo() {
     alert("Yay, it works!");
 }
+
+function changeText(){
+    var temp=document.getElementById("output");
+    temp.value="Hey Merry!"
+}
+function swapText(){
+    // for tags that are not of form type which doesnt have the value
+    //attribut there is a key word .innerHTML to get there value
+    let span=document.getElementById("output2");
+    let textbox=document.getElementById("textbox");
+    let temp=span.innerHTML;
+    span.innerHTML=textbox.value;
+    textbox.value=temp;
+}
