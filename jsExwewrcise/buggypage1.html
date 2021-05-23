@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buggyfiles</title>
+    <script>
+        function booyah2(){
+           return function booyah(){
+                alert("booyah2")
+            }
+        }
+        
+        var myfunc = function(a, x) {
+            return a * x;
+        };
+    var x = myfunc(2, 3);
+    var y = myfunc;
+    alert(x);
+    // this will dispaly 6 
+    alert(y(2,3));// will display 6 as well
+    </script>
     <script src="../js/onClick.js"></script>
 </head>
 <body data-new-gr-c-s-check-loaded="14.1012.0" data-gr-ext-installed="">
@@ -12,7 +28,6 @@
         <button onclick="gogogo()">Click Me!!1</button>
     </div>
 
-   
 </body>
     
 </html>

@@ -17,3 +17,10 @@ fieldset{
     background-image: url("../image/images/fieldbg.png");
     align-content: center;
 }
+
+#mytext{
+
+    width: fit-content;
+    text-decoration: underline;
+    text-underline-position: below;
+}

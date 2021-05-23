@@ -12,6 +12,7 @@ function pageLoad(){
 function onChange(){
     document.getElementById("mytext").style.fontWeight='bold';
     document.getElementById("mytext").style.color='green';
+    
     document.getElementById("mytext").style.textUnderlinePosition='below';
 }
 window.onload= function(){
