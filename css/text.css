@@ -1,0 +1,19 @@
+body{
+    background-color: darkolivegreen;
+    color: darksalmon;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:auto;
+}
+h1, legend{
+    color: darksalmon;
+}
+button{
+    background-color: darksalmon;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset{
+    background-image: url("../image/images/fieldbg.png");
+    align-content: center;
+}
