@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCIImation</title>
+    <link rel="stylesheet" href="css/ascii.css">
+    <script src="js/animation.js"></script>
+    <script src="js/ascii.js"></script>
+</head>
+<body>
+    <h1 id="heading"> CSE 190 M ASCII Animation Viewer</h1>
+   
+    <div class="text-area-wrapper">
+        <textarea name="text-box" id="text-box" cols="80" rows="20"></textarea>
+    </div>
+
+    <div class="option-wrapper">
+    <fieldset class="fieldset-boxing">
+        <legend>paly controls:</legend>
+        <button id="start">start</button>
+        <button id="end">stop</button>
+    </fieldset>
+
+    <fieldset class="fieldset-boxing">
+            <legend>Animation:</legend>
+            <select name="select" id="select">
+            <option value="blank" selected="selected">Blank</option>
+            <option value="excersise">EXERCISE</option>
+            <option value="juggler">JUGGLER</option>
+            <option value="bike">BIKE</option>
+            <option value="dive">DIVE</option>
+
+        </select>
+    </fieldset>
+
+    <fieldset class="fieldset-boxing">
+        <legend>size:</legend>
+            <select name="size" id="size">
+            <option value="tiny" selected="selected">Tiny</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="extralarge">Extra Large</option>
+            <option value="xxl">XXL</option>
+        </select>
+    </fieldset>
+    <fieldset class="fieldset-boxing">
+        <legend>speed:</legend>
+        <input type="radio" name="speed" value="Turbo" id="speed"> Turbo
+    </fieldset>
+</div>
+</body>
+</html>
