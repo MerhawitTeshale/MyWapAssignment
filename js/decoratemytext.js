@@ -11,9 +11,8 @@ function pageLoad(){
 // }
 function onChange(){
     document.getElementById("mytext").style.fontWeight='bold';
-    document.getElementById("mytext").style.color='green';
-    
-    document.getElementById("mytext").style.textUnderlinePosition='below';
+    document.getElementById("mytext").style.color='green'; 
+    document.getElementById("mytext").style.textDecoration='underline';
 }
 window.onload= function(){
     var biggerBtn=document.getElementById('btn-big');
