@@ -2,7 +2,8 @@ body{
     background-color: darkolivegreen;
     color: darksalmon;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width:auto;
+    margin: auto;
+    padding: 22px 100px;
 }
 h1, legend{
     color: darksalmon;
@@ -16,10 +17,9 @@ button{
 fieldset{
     background-image: url("../image/images/fieldbg.png");
     align-content: center;
+    max-width: fit-content;
 }
 
 #mytext{
-
-    width: fit-content;
-    
+ width: 500px;
 }
