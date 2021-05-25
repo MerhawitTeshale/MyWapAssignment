@@ -95,7 +95,7 @@
     }
 
     function changeFrame(){
-        var frames=currentAnimationText.split("=====\n");
+        var frames=currentAnimationText.split('=====\n');
         txtShowAnimation.value=frames[index];
         index++;
 
