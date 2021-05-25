@@ -7,26 +7,26 @@
     <title>ASCIImation</title>
     <link rel="stylesheet" href="css/ascii.css">
     <script src="js/animation.js"></script>
-    <script src="js/ascii.js"></script>
+    <script src="js/asciii.js"></script>
 </head>
 <body>
     <h1 id="heading"> CSE 190 M ASCII Animation Viewer</h1>
    
     <div class="text-area-wrapper">
-        <textarea name="text-box" id="text-box" cols="80" rows="20"></textarea>
+        <textarea name="text-box" id="txtShowAnimation" cols="80" rows="20"></textarea>
     </div>
 
     <div class="option-wrapper">
     <fieldset class="fieldset-boxing">
         <legend>paly controls:</legend>
-        <button id="start">start</button>
-        <button id="end">stop</button>
+        <button id="start-btn">start</button>
+        <button id="stop-btn">stop</button>
     </fieldset>
 
     <fieldset class="fieldset-boxing">
             <legend>Animation:</legend>
-            <select name="select" id="select">
-            <option value="blank" selected="selected">Blank</option>
+            <select name="select" id="select-Animation">
+            <option value="blank" >Blank</option>
             <option value="excersise">EXERCISE</option>
             <option value="juggler">JUGGLER</option>
             <option value="bike">BIKE</option>
@@ -37,8 +37,8 @@
 
     <fieldset class="fieldset-boxing">
         <legend>size:</legend>
-            <select name="size" id="size">
-            <option value="tiny" selected="selected">Tiny</option>
+            <select name="size" id="select-size">
+            <option value="tiny" >Tiny</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
@@ -48,7 +48,7 @@
     </fieldset>
     <fieldset class="fieldset-boxing">
         <legend>speed:</legend>
-        <input type="radio" name="speed" value="Turbo" id="speed"> Turbo
+        <input type="radio" name="speed" value="Turbo" id="chk-speed"> Turbo
     </fieldset>
 </div>
 </body>
