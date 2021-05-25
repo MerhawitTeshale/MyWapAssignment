@@ -34,7 +34,6 @@ for using it)?
     cleaner html page--as we did with separating css and html with the idea of creating html pages dedicated for 
     content and css for style, we need Javascript to be sepate too
 
-    but still if we call functions inside the html file and then it is Unobtrusive Javascript because Javascript code 
-    and content are mixed.
+    
     
 
