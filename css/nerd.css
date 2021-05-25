@@ -13,6 +13,12 @@ legend{
     background-color: rgb(250, 246, 240);
     box-shadow: grey;
 }
+.fieldset-connt{
+    margin: auto;
+}
+.head-img{
+    margin: 0px 420px;
+}
 label{
     padding:9px;
     font-weight: bold;
@@ -36,4 +42,7 @@ button{
 .text-color{
     color: red;
     text-underline-position: unset;
+}
+.footer-part{
+    margin: 35px 446px;
 }
