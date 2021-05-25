@@ -69,6 +69,7 @@
     }
 
     function changeDelay(){
+        
         if(chkSpeed.checked){
             delay=50;
             clearInterval(timer);
