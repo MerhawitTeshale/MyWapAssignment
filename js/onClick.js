@@ -2,15 +2,18 @@
 function clickedButton(){
     alert('You Clicked Me')
 }
-
+var a
+var b
 function tipCalculator(){
     //document.getElementById("output");
-    var a=parseInt(document.getElementById("subtotal").value);
-    var b=parseInt(document.getElementById("tip").value);
+     a=parseInt(document.getElementById("subtotal").value);
+     b=parseInt(document.getElementById("tip").value);
    // var result=0;
     //result=a+b;
-    var lab=document.getElementById("result");
-    lab.value=a+b;
+    var freearea=document.getElementById("spanarea");
+    var lab;
+    lab=calculateTip();
+    freearea.innerHTML=lab;
     
    // alert(result);
 }
@@ -19,16 +22,10 @@ function gogogo() {
     alert("Yay, it works!");
 }
 
-function changeText(){
-    var temp=document.getElementById("output");
-    temp.value="Hey Merry!"
-}
-function swapText(){
-    // for tags that are not of form type which doesnt have the value
-    //attribut there is a key word .innerHTML to get there value
-    let span=document.getElementById("output2");
-    let textbox=document.getElementById("textbox");
-    let temp=span.innerHTML;
-    span.innerHTML=textbox.value;
-    textbox.value=temp;
+function calculateTip(){
+    var subtotal=a;
+    var percent=b;
+
+    var result=a+(a*(b/100));
+    return result;
 }

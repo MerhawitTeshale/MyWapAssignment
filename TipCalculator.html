@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="css/tip.css">
 </head>
 <body>
-    <head>
+    <div class="div-wrapper">
+    <div class="inner-div">
         <img id="img-con" src="image/logo/4328c30611e0c3a5556fa1d4cb35dae7.png" alt=" calculator image">
         <text id="p-con">Tip Calculator</text>
-    </head>
+    </div>
     <fieldset>
-        <input type="number" name="subtotal" id="subtotal">
+        <input type="number" name="subtotal" id="subtotal"> 
         <label for="subtotal">$ Subtotal</label> <br><br>
-        <input type="number" name="tip" id="tip">
+        <input type="number" name="tip" id="tip"> 
         <label for="tip">% Tip</label> <br><br>
         <button onclick="tipCalculator()"> Calculate Tip</button>        
     <hr>
-        <h1>Your Total:</h1>
-        <input type="text" id="result" name="result">
+        <h1 class="content">Your Total:</h1>
+        <span class="content" id="spanarea"></span>
     </fieldset>
+</div>
 </body>
 </html>
