@@ -8,7 +8,22 @@ p,li,ol{
     color: whitesmoke;
     text-align: justify;
 }
-
+fieldset{
+    margin: auto;
+}
+.border-class{
+    border: 3px solid rosybrown;
+    margin: 40px 0px;
+}
+   
+.grade-h1{
+    display: flex;
+    justify-content: center;
+}
+.btn-grade{
+    border-radius: 5px;
+    background-color: salmon;
+}
 ol{
     list-style-type: decimal;
 }

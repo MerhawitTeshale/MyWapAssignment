@@ -32,27 +32,30 @@
                     </div>
                 </div>
             </div>
-        <h1>Retrive your grade</h1>
+        <h1 class="grade-h1">Retrive your Grade</h1>
             <fieldset>
-                <legend>Student information:</legend>
+                <legend>Student Information:</legend>
        
         <form action="http://mumstudents.org/params.php" method="POST" enctype="" novalidate autocomplete="">
-            <label for="studentId">Student ID: </label> <br> <br>
-            <input type="text" id="sid" name="sid" pattern="[0-9]{4}" required><br>
-            <label for="fname">First Name: </label> <br> <br>
-            <input type="text" id="fname" name="fname" pattern="[A-Za-z]" title="use character only"><br>
-            <label for="lname">Last Name: </label> <br> <br>
-            <input type="text" id="lname" name="lname" pattern="[A-Za-z]" title="use character only"><br> <br>
+            <label for="studentId">Student ID: </label> <br>
+            <input type="text" id="sid" name="sid" pattern="/[0-9]{4}/" required><br> <br>
+            <label for="fname">First Name: </label> <br> 
+            <input type="text" id="fname" name="fname" pattern="/[A-Za-z]/" title="use character only"><br><br>
+            <label for="lname">Last Name: </label> <br> 
+            <input type="text" id="lname" name="lname" pattern="/[A-Za-z]/" title="use character only"><br> <br>
             
+            <div class="border-class">
             <p>Assignments:</p>
-            <select name="assignments" id="Ass">
+            <select name="assignments" id="Ass" >
                 <option value="W1D1"> W1D1: Home Page</option>
                 <option value="W1D2"> W1D2: About page</option>
                 <option value="W1D2-2"> W1D2-2: Recipe</option>
                 <option value="W1D3"> W1D3: Movie Review</option>
                 <option value="W1D3-2"> W1D3-2: Grade Book</option>
             </select>
-        
+        </div>
+
+        <div class="border-class">
             <p>Provide your entry:</p>
             <input type="radio" id="feb2020" name="entry" value="feb-2020">
             <label for="feb2020">Feb-2020</label><br>
@@ -64,7 +67,8 @@
             <label for="may2021">May-2021</label><br> <br>
             <input type="checkbox" id="validation" name="validation" value="i agree">
             <label for="validation">this is a statment that i provided above is correct and i will be held accountable if it is not</label> <br>
-            <input type="submit" value="Submit">
+        </div>
+            <input type="submit" value="Submit" class="btn-grade">
         </form>
             </fieldset>
       
