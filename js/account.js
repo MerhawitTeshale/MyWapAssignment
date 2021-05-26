@@ -1,32 +1,38 @@
 
 (function (){
+        'use strict'
 
-    var accname;
-    var deposit;
-    //var givenName;
-    //var givenDeposit;
-    var result;
+        // reviling moduel pattern
+    const accountCreator=(function(){
+      //this are hidden
+        let accountName;
+       let amount;
+       //this is revieled
+       return{
+           createAccount:function(name,amt){
+               accountName=name;
+               amount=amt;
 
-    window.onload=function(){
-        var givenName=document.getElementById("accName");
-        var givenDeposit=document.getElementById("deposit");
-        result=document.getElementById("disResult");
-        document.getElementById("createAcc").onclick=clicked;
-    };
+               return{name:accountName,balance:amount};
+           }
+       }
 
-    var CreateAccount=(function(){
-            this.accname=accName;
-            this.deposit=deposit
-            
-    }());
+    })();
+
+    const accountCreated=[];
     
-    function clicked(){
-        var a1= CreateAccount(givenName,givenDeposit);
-       var a2= CreateAccount("Arsema",30000);
-        result.value=a2.accname;
+    function createNewAccount(){
+        const newAccount=accountCreator.createAccount(document.getElementById('accName').value,document.getElementById('deposit').value);
+        accountCreated.push(newAccount);
+        document.getElementById('disResult').value='';
+
+        for(const account of accountCreated){
+            document.getElementById('disResult').value+=`Account Name:${account.name}, Balance:${account.balance}`
+        }
     }
-
-   
     
+    window.onload=function(){
+        document.getElementById('createAcc').onclick=createNewAccount
+    }
     
 })();

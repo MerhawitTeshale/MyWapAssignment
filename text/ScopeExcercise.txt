@@ -52,20 +52,21 @@ When f is called by x.f( ), what does 'this' refer to?
 8. Create an object that has properties with name = "fred" and major="music" and a property that is a function
 that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal.
 
-    answer: obj=function(){
+    answer: obj={
         name:'fred',
         major:'music'
 
-        return function(a,b){
-            var hold=[];
-            if(a===b){
-                hold.push(a*a)
-                hold.push(b*b)
-                return hold;
-            }else{
-                 return a<b?a:b;
-            }
-            
+        return{
+	       func:function(a,b){
+                var hold=[];
+                if(a===b){
+                    hold.push(a*a)
+                    hold.push(b*b)
+                    return hold;
+                }else{
+                    return a<b?a:b;
+                }
+            }   
         }
     }
 9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function.
@@ -86,8 +87,8 @@ Employee objects have the following fields: name, salary, position.
 10. Write a Javascript function that takes any number of input arguments and returns the product of the
 arguments.
 var anynumber=function(a,b, ...more){
-        var result;
-        for(var i of anynumber){
+        var result=a*b;
+        for(var i of more){
             result*=i;
         }
 
