@@ -1,6 +1,7 @@
 
 (function(){
 
+    "use strict"
     var size=12;
     var timer=null;
     window.onload=function(){
@@ -21,7 +22,7 @@
     };
 
     function malkovitch(){
-        
+
     }
     function igpay(){
         var cheker=document.getElementById('mytext');
@@ -53,6 +54,8 @@
             document.getElementById('mytext').style.color='black';
             document.getElementById('mytext').style.fontWeight='normal';
             document.getElementById('mytext').style.textDecoration='none';
+            document.body.style.backgroundImage="url()"
+            document.body.style.backgroundColor='darkolivegreen'
         }
     }
 
