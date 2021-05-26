@@ -3,13 +3,13 @@
 
     var accname;
     var deposit;
-    var givenName;
-    var givenDeposit;
+    //var givenName;
+    //var givenDeposit;
     var result;
 
     window.onload=function(){
-        givenName=document.getElementById("accName");
-        givenDeposit=document.getElementById("deposit");
+        var givenName=document.getElementById("accName");
+        var givenDeposit=document.getElementById("deposit");
         result=document.getElementById("disResult");
         document.getElementById("createAcc").onclick=clicked;
     };

@@ -1,23 +1,47 @@
 
-function pageLoad(){
-    var biggerBtn= document.getElementById("btn-big");
-    biggerBtn.onclick= biggerClick;
-}
+(function(){
 
-// function biggerClick(){
-//     document.getElementById("mytext").style.fontSize='24pt';
-//     //word.style.fontSize="24pt";
-//   //  alert("Hello world!");
-// }
-function onChange(){
-    document.getElementById("mytext").style.fontWeight='bold';
-    document.getElementById("mytext").style.color='green'; 
-    document.getElementById("mytext").style.textDecoration='underline';
-}
-window.onload= function(){
-    var biggerBtn=document.getElementById('btn-big');
-    biggerBtn.onclick= function(){
-        document.getElementById('mytext').style.fontSize='24pt';
+    var size=12;
+    var timer=null;
+    window.onload=function(){
+        var theText=document.getElementById('mytext');
+        
+        var theBtn=document.getElementById('btnbig');
+        theBtn.onclick=startBigging;
+
+        var theradio= document.getElementById('bling');
+        // size=20; 
+        //size=parseInt(document.getElementsByClassName('textclass').fontSize);
+        theradio.onchange=bilingEffect;
     };
-};
 
+    
+    function startBigging(){
+        if (timer===null){
+            timer=setInterval(getBigger,1000);
+        }else{
+            clearInterval(timer);
+            timer=null;
+        }
+    }
+    function getBigger(){ 
+            size+=2;
+            document.getElementById('mytext').style.fontSize = size+'pt';      
+        
+    }
+
+    function bilingEffect(){
+        var radio=document.getElementById('bling');
+        if (radio.checked){
+            document.getElementById('mytext').style.color='green';
+            document.getElementById('mytext').style.fontWeight='bold';
+            document.getElementById('mytext').style.textDecoration='underline';
+            document.body.style.backgroundImage="url(image/photo-1461749280684-dccba630e2f6.jpg)"
+        }else{
+            document.getElementById('mytext').style.color='black';
+            document.getElementById('mytext').style.fontWeight='normal';
+            document.getElementById('mytext').style.textDecoration='none';
+        }
+    }
+
+})();
