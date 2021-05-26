@@ -13,9 +13,21 @@
         // size=20; 
         //size=parseInt(document.getElementsByClassName('textclass').fontSize);
         theradio.onchange=bilingEffect;
+        var thelatine=document.getElementById("weirdbtn");
+        thelatine.onclick=igpay;
+
+        var themalko=document.getElementById("malkobtn");
+        themalko.onclick=malkovitch;
     };
 
-    
+    function malkovitch(){
+        
+    }
+    function igpay(){
+        var cheker=document.getElementById('mytext');
+        if (cheker.charAt(0)==="A"){
+        }
+    }
     function startBigging(){
         if (timer===null){
             timer=setInterval(getBigger,1000);
