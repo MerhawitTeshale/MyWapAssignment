@@ -1,15 +1,15 @@
 (function(){
     'use strict'
 
-    var timer=null;
+   
     window.onload=function(){
     document.getElementById('btn').onclick=ruddyTimer;
     };
 
     var ruddyTimer=(function(){
-      var timer=null;
-        
-      return function(){if(timer===null){
+      var timer=null; 
+      return function(){
+          if(timer===null){
           timer=setInterval(rudy,1000);
       }else{
           clearInterval(timer);
