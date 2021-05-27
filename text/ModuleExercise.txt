@@ -20,7 +20,7 @@
                 document.write(x);
                 }
 
-        answer:1,8,8,9,10,1
+        answer:10,8,8,9,10,1
 
 2. define GLobal and Local Scope in javaScript.
 
@@ -331,7 +331,7 @@ public methods setAddress(newAddress) and getAddress( ).
 
     answer: it will alet Error: Hattori
 
-15.15. What is the output of the following code?
+15. What is the output of the following code?
             const promise = new Promise((resolve, reject) => {
                     resolve(“Hattori”);
                     setTimeout(()=> reject(“Yoshi”), 500);
