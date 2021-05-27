@@ -307,12 +307,13 @@ public methods setAddress(newAddress) and getAddress( ).
      }
     return myobj;
   })();
-  
+
+  employee.address="";
   employee.setAdress=function(add){
-  		address=add;
+  		this.address=add;
   }
   employee.getAddress=function(){
-  		return address;
+  		return this.address;
   }
   let e1=employee;
   e1.setName('merhawit');
