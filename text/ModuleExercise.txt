@@ -20,7 +20,7 @@
                 document.write(x);
                 }
 
-        answer:10,8,8,9,10,1
+        answer:undefined,8,8,9,10,1
 
 2. define GLobal and Local Scope in javaScript.
 
