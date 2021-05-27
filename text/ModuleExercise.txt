@@ -173,7 +173,156 @@ with the following fields and methods:
   console.log(e1.incSalary(50))
 })();
 
-14. 14. What is the output of the following code?
+
+11.Rewrite your answer to Question 10 using the Anonymous Object Literal Return Pattern.
+
+(function(){
+
+	let employee=(function(){
+      let name;
+      let age;
+      let salary;
+     
+     
+     let getAge=function(){
+       return age;
+     }
+     
+     let getName=function(){
+     			return name;
+     }
+     let getSalary=function(){
+     		return salary;
+     }
+     
+    return {
+    	setAge:function(agen){
+     			age=agen;
+     },
+     
+     setName:function(namee){
+     			name=namee;
+     },
+     setSalary:function(salaryy){
+     			salary=salaryy;
+     },
+     
+     incAge:function(){
+     			return age=getAge()+1;
+     },
+     incSalary:function(perc){
+     			let inc= getSalary()*perc/100;
+          return salary=getSalary()+inc;
+     }
+    };
+  })
+
+12. Rewrite your answer to Question 10 using the Locally Scoped Object Literal Pattern.
+
+(function(){
+
+	let employee=(function(){
+      let name;
+      let age;
+      let salary;
+     
+     
+     let getAge=function(){
+       return age;
+     }
+     
+     let getName=function(){
+     			return name;
+     }
+     let getSalary=function(){
+     		return salary;
+     }
+     
+     let myobj={};
+     
+    
+    	myobj.setAge=function(agen){
+     			age=agen;
+     }
+     
+     myobj.setName=function(namee){
+     			name=namee;
+     }
+     myobj.setSalary=function(salaryy){
+     			salary=salaryy;
+     }
+     
+    myobj.incAge=function(){
+     			return age=getAge()+1;
+     }
+     myobj.incSalary=function(perc){
+     			let inc= getSalary()*perc/100;
+          return salary=getSalary()+inc;
+     }
+    return myobj;
+  })();
+
+13. Write a few Javascript instructions to extend the Module of Question 10 to have a public address field and
+public methods setAddress(newAddress) and getAddress( ).
+
+(function(){
+
+	let employee=(function(){
+      let name;
+      let age;
+      let salary;
+     	let address
+     
+     let getAge=function(){
+       return age;
+     }
+     
+     let getName=function(){
+     			return name;
+     }
+     let getSalary=function(){
+     		return salary;
+     }
+     
+     let myobj={};
+     
+    
+    	myobj.setAge=function(agen){
+     			age=agen;
+     }
+     
+     myobj.setName=function(namee){
+     			name=namee;
+     }
+     myobj.setSalary=function(salaryy){
+     			salary=salaryy;
+     }
+     
+    myobj.incAge=function(){
+     			return age=getAge()+1;
+     }
+     myobj.incSalary=function(perc){
+     			let inc= getSalary()*perc/100;
+          return salary=getSalary()+inc;
+     }
+    return myobj;
+  })();
+  
+  employee.setAdress=function(add){
+  		address=add;
+  }
+  employee.getAddress=function(){
+  		return address;
+  }
+  let e1=employee;
+  e1.setName('merhawit');
+  e1.setAge(24);
+  e1.incAge();
+  e1.setSalary(1000000)
+  e1.setAdress('mekelle')
+  console.log(e1.getAddress())
+})();
+14. What is the output of the following code?
         const promise = new Promise((resolve, reject) => {
                  reject(“Hattori”);
         });
