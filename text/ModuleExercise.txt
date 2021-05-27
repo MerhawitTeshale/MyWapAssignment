@@ -126,54 +126,52 @@ the Javascript file can remove all the names from the Global namespace?
 10. Using the Revealing Module Pattern, write a Javascript definition of a Module that creates an Employee Object
 with the following fields and methods:
 
-let employee=(function(){
-	
-  	let name;
-    let age;
-    let salary;
-    
-    let setAge=function(newAge){
-  		age=newAge;  
-    }
-    
-    let setSalary=function(newSalary){
-  		salary=newSalary;  
-    }
-    
-    let setName:function(){
-  		return function(newName){
-      	name=newName;  
-   		 }
-    },
-    
-    let getName=function(){
-    		return name;
-    }
-    let getSalary=function(){
-    		return salary;
-    }
-    let getAge=function(){
-    	return age;
-    }
-    
-  	let increaseSalary=function(percent){
-    return getSalary*percent+getSalary;
-    }
-    
-   let incrementAge=function(){
-     return getAge+1;
-    }
-    
-    return {setName:setName, setAge:setAge, setSalary:setSalary, incrementSalary:increaseSalary, incrementAge:incrementAge};
+(function(){
 
+	let employee=(function(){
+      let name;
+      let age;
+      let salary;
+     
+     let setAge=function(agen){
+     			age=agen;
+     }
+     
+     let setName=function(namee){
+     			name=namee;
+     }
+     let setSalary=function(salaryy){
+     			salary=salaryy;
+     }
+     let getAge=function(){
+       return age;
+     }
+     
+     let getName=function(){
+     			return name;
+     }
+     let getSalary=function(){
+     		return salary;
+     }
+     
+     let incAge=function(){
+     			return age=getAge()+1;
+     }
+     let incSalary=function(perc){
+     			let inc= getSalary()*perc/100;
+          return salary=getSalary()+inc;
+     }
+    return {setAge:setAge, setName:setName, incAge:incAge, incSalary:incSalary, setSalary:setSalary};
+  })();
+  
+  
+  let e1=employee;
+  e1.setName('merhawit');
+  e1.setAge(24);
+  e1.incAge();
+  e1.setSalary(1000000)
+  console.log(e1.incSalary(50))
 })();
-
-let e1=employee;
-
-e1.SetName('Merhawit');
-//e1.setSalary(20000);
-//e1.setAge(25);
-console.log (e1)
 
 14. 14. What is the output of the following code?
         const promise = new Promise((resolve, reject) => {
