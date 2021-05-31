@@ -8,7 +8,6 @@ $(function(){
 
 function red(){
     win=false;
-    chk++;
     $('#status').text('You lose!').css('color','red');
     $('.boundary').each(function(){
         $(this).addClass('youlose')
