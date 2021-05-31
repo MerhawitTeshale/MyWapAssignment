@@ -1,8 +1,33 @@
-$(function(){
 
-    $(document).mousemove(function(){
-        if ($('#boundary1:hover').length!=0){
-                $('#boundary1').css("background-color",'red');
-        }
-    })
-})
+var win=true;
+$(function(){
+    $('#maze .boundary').off();
+    $('#end').off();
+    $('#start').click(reset);
+});
+
+function red(){
+    win=false;
+    chk++;
+    $('#status').text('You lose!').css('color','red');
+    $('.boundary').each(function(){
+        $(this).addClass('youlose')
+    });
+}
+
+function reset(){
+    win=true;
+    $('#status').text('Game Started!').css('color','green');
+    $('.boundary').each(function(){
+        $(this).removeClass('youlose');
+    });
+
+    $('#maze .boundary').on('mouseover',red);
+    $('#end').on('mouseover',end);
+}
+
+function end(){
+    let sts= win==true?'You win! :)':'Sorry, you lost! :('
+    $('#status').text(sts);
+    $('#maze .boundary').off();
+}
