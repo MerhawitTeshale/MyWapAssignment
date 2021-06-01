@@ -2,6 +2,11 @@
 
         answer: the jQuery Object is a DOM object wrapped to be jQuery Object so we can manipulate it easily.
                 jQuery functions are predefined methods in the library that make our webpage more interactive by writting smaller code.
+                
+                The dollar sign with the parentheses is the shorter name of 
+the jQuery function. This shortcut saves us from writing
+“jQuery()” every time we want to call the jQuery function. The 
+jQuery function is also often referred to as the jQuery wrapper
 2.  Write jQuery code to find all h1 elements that are children of a div element and make their background
 color red.
 
