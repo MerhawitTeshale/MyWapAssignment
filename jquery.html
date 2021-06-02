@@ -1,49 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>text demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump for Joy</title>
     <style>
-        p {
-            color: blue;
-            margin: 8px;
+        div {
+            float: left;
+            height: 245px;
+            text-align: left;
+            border: solid #000 3px;
+
         }
 
-        span {
-            color: red;
+        img {
+            width: 150px;
+            height: 245px;
+        }
+
+        #header {
+            width: 100%;
+            border: 0px;
+            height: 50px;
+        }
+
+        #main {
+            background-color: grey;
+            height: 500px;
+        }
+
+        .discount {
+            border: solid #0f0 3px;
+        }
+
+        .no_discount {
+            border: solid #f00 3px;
+        }
+
+        .my_hover {
+            border: solid #00f 3px;
         }
     </style>
-    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 
 <body>
-    <p id="p1 "><span>Test</span> Paragraph.</p>
-    <p id="p2"></p>
-    <ul class="level-1">
-        <li class="item-i">I</li>
-        <li class="item-ii">II
-        <ul class="level-2">
-        <li class="item-a">A</li>
-        <li class="item-b">B
-        <ul class="level-3">
-        <li class="item-1">1</li>
-        <li class="item-2">2</li>
-        <li class="item-3">3</li>
-        </ul>
-        </li>
-        <li class="item-c">C</li>
-        </ul>
-        </li>
-        <li class="item-iii">III</li>
-       </ul>
-    <script>
-        let pp = $('#p1').text();
-        $('#p1').text(pp);
-        $('#p2').text('it is just text');
+    <div id="header">
+        <h2>JUMP for JOY sale</h2>
+    </div>
 
-        $('.level-2').css("background","red");
-    </script>
+    <div id="main">
+        <div class="guess-box"><img src="image/p-img/depositphotos_2959308-stock-photo-3d-small-positive-symbol.jpg"
+                alt="soe"></div>
+        <div class="guess-box"><img src="image/p-img/goa_small_bird_202958.jpg" alt="si"></div>
+        <div class="guess-box"><img src="image/p-img/pexels-photo-1000498.jpeg" alt="jej"></div>
+        <div class="guess-box"><img src="image/p-img/unnamed.png" alt="id"></div>
+    </div>
+    <script src="jQuery/jquery-3.6.0.js"></script>
+    <script src="jQuery/getDiscount.js"></script>
 </body>
 
 </html>
