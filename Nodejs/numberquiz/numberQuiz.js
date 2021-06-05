@@ -15,6 +15,7 @@ const answer=[9,8,36,13,32];
  }
  console.log(num.q1[0]);
  exports.num;
+ $("#score")
 exports.displayres=(req,res,vals)=>{
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write('<!DOCTYPE html>');

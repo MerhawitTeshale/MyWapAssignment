@@ -62,3 +62,4 @@ exports.division=function(req,res,vals){
     res.write("</html>");
     return res.end();
 };
+exports.dispaly

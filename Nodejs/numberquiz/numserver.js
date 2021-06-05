@@ -6,10 +6,9 @@ var numberquiz=require('./numberQuiz');
 http.createServer((req,res)=>{
     var q=url.parse(req.url,true);
     var filename="."+q.pathname;
-   
+    var qdata=q.query;
     if(q.pathname=='/numquiz.js'){
-       numberquiz.displayques(req,res,vals);
-
+       numberquiz.displayques(req,res,qdata.result);
     }else fs.readFile(filename,(err,data)=>{
         if(err){
             res.writeHead(404,{'Content-Type':'text/html'});
