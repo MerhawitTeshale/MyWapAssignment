@@ -17,42 +17,63 @@ exports.guessnumber = function (req, res, vals) {
     let quiznumber = 0;
     score = score + prevscore;
   
+
     if (!hidden) {
       hidden = 1;
       score = 0;
   
       displayQuestion(req, res, nums.pi, score, hidden);
     } else {
-      if (hidden == 1) {
-        hidden++;
-        if( youranswer == answer[0]){
-        score++;
-        }
-        displayQuestion(req, res, nums.fib, score, hidden);
+      switch (hidden) {
+        case 1:
+          hidden++;
+          if (youranswer == answer[0]) {
+            score++;
+            displayQuestion(req, res, nums.fib, score, hidden);
+          } else {
+            displayQuestion(req, res, nums.fib, score, hidden);
+          }
+          break;
+        case 2:
+          hidden++;
+          if (youranswer == answer[1]) {
+            score++;
+            displayQuestion(req, res, nums.sq, score, hidden);
+          } else {
+            displayQuestion(req, res, nums.sq, score, hidden);
+          }
+          break;
+        case 3:
+          hidden++;
+          if (youranswer == answer[2]) {
+            score++;
+            displayQuestion(req, res, nums.pr, score, hidden);
+          } else {
+            displayQuestion(req, res, nums.pr, score, hidden);
+          }
+          break;
+        case 4:
+          hidden++;
+          if (youranswer == answer[3]) {
+            score++;
+            displayQuestion(req, res, nums.pow, score, hidden);
+          } else {
+            displayQuestion(req, res, nums.pow, score, hidden);
+          }
+          break;
+        case 5:
+          hidden++;
+          if (youranswer == answer[4]) {
+            score++;
+            displayfnalMesg(req, res, score, answer.length);
+          } else {
+            displayfnalMesg(req, res, score, answer.length);
+          }
+          break;
+        default:
+          break;
       }
-      if (hidden == 2) {
-        hidden++;
-        if(youranswer == answer[1])
-        score++;
-        displayQuestion(req, res, nums.sq, score, hidden);
-      }
-      if (hidden == 3) {
-        hidden++;
-        if(youranswer == answer[2])
-        score++;
-        displayQuestion(req, res, nums.pr, score, hidden);
-      }
-      if (hidden == 4) {
-        hidden++;
-        if(youranswer == answer[3])
-        score++;
-        displayQuestion(req, res, nums.pow, score, hidden);
-      }
-      if (hidden == 5){
-        if(youranswer == answer[4])
-        score++;
-        displayfnalMesg(req, res, score, answer.length);
-      }
+      
     }
   };
   function displayQuestion(req, res, list, score, hidden) {
@@ -82,7 +103,7 @@ exports.guessnumber = function (req, res, vals) {
     res.write("</form>");
   
     res.write(
-      "<a href='https://amanuelchorito.github.io/startquiz.html'>Start over</a>"
+      "<a href='http://localhost:8085/'>Start over</a>"
     );
     res.write("</body>");
     res.write("</html>");
@@ -106,6 +127,9 @@ exports.guessnumber = function (req, res, vals) {
     res.write("out of ");
     res.write(`${ans}`);
     res.write("</p>");
+    res.write(
+      "<a href='href='http://localhost:8085/'>Start over</a>"
+    );
     res.write("</div>");
     res.write("</body>");
     res.write("</html>");
