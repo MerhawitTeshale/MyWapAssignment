@@ -28,7 +28,7 @@ http.createServer(function (req,res) {
             res.writeHead(404,{'Content_Type':'text/html'});
             return res.end('404 Not Found');
         }
-        res.writeHead(200);
+        res.writeHead(200,{'Content_Type':'text/css'});
         res.write(data);
         return res.end();
     });
