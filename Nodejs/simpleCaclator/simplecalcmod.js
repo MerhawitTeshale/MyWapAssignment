@@ -27,6 +27,9 @@ var dispaly=(req,res,vals)=>{
     res.write("<p style=\"background-color:salmon; color:white; font-size:24pt; font-family:Monotype Corsiva\" >The sum is: ");
     res.write(String(result));
     res.write("</p>");
+    res.write(
+        "<a href='http://localhost:8080/calculator.html'>Another calculation</a>"
+      );
     res.write("</body>");
     res.write("</html>");
     return res.end();
