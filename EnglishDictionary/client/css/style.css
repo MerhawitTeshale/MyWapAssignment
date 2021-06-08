@@ -1,21 +1,77 @@
 body{
-    margin:-21px 100px;
-    padding: 30px 100px;
-    background-color: rgb(243, 242, 242);
+    /*margin:-21px 100px;
+    padding: 30px 100px;*/
+    background-color: rgba(247, 218, 218, 0.829);
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
+h1{
+    display: inline;
+    position: absolute;
+}
+header img{
+    width:100px;
+}
+#loader{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100px;
+}
 header{
-    background-color: rgb(179, 176, 176);
+    background-color: rgb(160, 93, 85);
+    color:whitesmoke;
+    font-family:cursive;
     line-height: 70px;
     margin-bottom: 0px;
 }
-
+#displayresult{
+    color: rgb(104, 76, 76);
+    font-size: 14pt;
+    font-family: cursive;
+    border: tomato solid 3px;
+    
+}
+input[type=text]{
+    height:25px;
+    padding: 5px;
+    margin: 0px 10px;
+    border-radius:10px;
+    color: rgb(92, 91, 91);
+    /*box-shadow:0 0 15px 4px rgba(252, 175, 175, 0.239);*/
+}
+input[type=submit]{
+border:0.1em solid rgb(160, 93, 85);
+background-color:rgb(160, 93, 85) ;
+margin:0 0.3em 0.3em 0;
+border-radius:10px;
+width:100px;
+height: 30px;
+box-sizing: border-box;
+font-weight:300;
+color:#FFFFFF;
+text-align:center;
+}
+.intext {
+    background-color: #f3d9d9;
+    border:0;
+    box-shadow:0 0 4px rgba(65, 40, 40, 0.3);
+    transition: .3s box-shadow;
+  }
+.intext:hover {
+    box-shadow:0 0 4px rgba(145, 40, 40, 0.5);
+  }
 #form-div{
-    background-color: rgb(214, 212, 212);
+    background-color: rgb(219, 170, 170);
     line-height: 70px;
     /*text-align: center;*/
     vertical-align: middle;
     margin-top: -21px;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    color:whitesmoke;
+    font-size: 12pt;
+
 }
 form{
     display: inline;
