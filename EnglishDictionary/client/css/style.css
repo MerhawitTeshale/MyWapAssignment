@@ -29,7 +29,8 @@ header{
     color: rgb(104, 76, 76);
     font-size: 14pt;
     font-family: cursive;
-    border: tomato solid 3px;
+    border: rgb(248, 163, 148) solid 3px;
+    border-radius: 10px;
     
 }
 input[type=text]{
@@ -55,11 +56,11 @@ text-align:center;
 .intext {
     background-color: #f3d9d9;
     border:0;
-    box-shadow:0 0 4px rgba(65, 40, 40, 0.3);
+    box-shadow:0 0 4px rgba(44, 4, 4, 0.513);
     transition: .3s box-shadow;
   }
 .intext:hover {
-    box-shadow:0 0 4px rgba(145, 40, 40, 0.5);
+    box-shadow:0 0 4px rgba(56, 8, 8, 0.5);
   }
 #form-div{
     background-color: rgb(219, 170, 170);
@@ -80,8 +81,8 @@ form{
 }
 
 footer{
-    position: absolute;
-    padding: 100px 100px 0px 400px;
+    position: relative;
+    padding: 10px 10px 10px 750px;
     bottom: 0;
     width:100%;
     height:60px;

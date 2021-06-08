@@ -9,7 +9,9 @@ $(()=>{
        //console.log(reqword);
        $.post("http://localhost:5000/getAll",{word:reqword})
        .done((data)=>{
+           if(data.length)
            showresult(data);
+           $('#displayresult').append('Sorry! Definition is not found in this Dictionary')
        })
        .fail((err)=>{
            console.log(err);
