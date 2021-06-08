@@ -1,4 +1,4 @@
-$('#loader').hide();
+
 $(()=>{
 
     $('#btn').on('click',(event)=>{
@@ -15,11 +15,12 @@ $(()=>{
            console.log(err);
        })
        .always(()=>{
-            $('#loader').show();});
+            $('#loader').hide();});
   
-    $('#loader').hide(); 
+    $('#loader').show(); 
+    $('#displayresult').empty();
     });
-   
+   $('#loader').hide();
 });
 
 showresult=(val)=>{
